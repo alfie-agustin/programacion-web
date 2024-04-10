@@ -1,30 +1,73 @@
-/* Container for all content sections */
-.container {
-    display: flex;  /* Enables flexible positioning of child elements */
+body {
+  padding: 25px;
+  background-color: #FFF9EB;
+  margin: 0;
+}
+
+.title, .subtitle {
+  color: #0036F8;
+  text-align: center;
+}
+
+.content {
+  float: left;
+  width: 100%; /* Reduzco el ancho para dejar espacio para el margen */
+}
+
+.images-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.images-container img {
+  max-width: 100px; /* Ajusta el ancho máximo de las imágenes */
+  border-radius: 10px; /* Bordes redondeados */
+  margin: 0 10px; /* Ajusta los márgenes entre las imágenes */
 }
 
 
-/* Style for "About us", "Mission" and "Values" sections (similar to About Us) */
-.about-us, .mission, .values {
-    background-color: #e0e0e0;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 20px 0;
-    width: 40%;
+
+.Acerca-de-nosotros, .mision, .vision, .valores {
+  color: #0036F8;
+  text-align: center;
+  clear: both;
+  margin-bottom: 20px;
+
+
 }
 
-.about-us h2, .mission h2, .values h2 {
-    color: #333;
-    text-align: center;
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #EEEEEE;
+    top: 0;
+    right: 0;
+    overflow-y: auto;
+    box-sizing: border-box;
+    border: 1px solid black; /* Borde sólido negro de 1px de grosor */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espacio entre el borde y el contenido */
 }
 
-.about-us p, .mission p, .values p {
-    text-align: justify;
+
+
+.chatbot {
+  flex: 1;
+  float: right;
+  width: 100%; /* Reduzco el ancho para dejar espacio para el margen */
+  height: 100vh; /* Ocupa toda la altura de la pantalla menos 20px */
+  position: flex;
+  top: 0;
+  right: 0;
+  overflow-y: auto;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-left: 20px; /* Agrega un espacio a la izquierda del chatbot */
 }
 
-/* Style for the company image */
-.company-image {
-    width: 40%;  /* Adjust width as needed */
-    margin: 20px 0;
-    float: right;  /* Positions the image to the right */
-}
+
+
