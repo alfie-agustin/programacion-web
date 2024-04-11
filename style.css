@@ -1,6 +1,6 @@
 body {
   padding: 25px;
-  background-color: #FFF9EB;
+  background-color: #F9FBFB;
   margin: 0;
 }
 
@@ -9,11 +9,101 @@ body {
   text-align: center;
 }
 
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Ajusta la altura según sea necesario */
+}
+
+.head nav {
+    text-align: center;
+}
+
+.head nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.head nav ul li {
+    display: inline;
+    margin-right: 20px; /* Ajusta el margen entre enlaces según sea necesario */
+}
+
+.head nav ul li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último enlace */
+}
+
+.head nav ul li a {
+    text-decoration: none;
+}
+
 .content {
   float: left;
   width: 100%; /* Reduzco el ancho para dejar espacio para el margen */
 }
 
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-container {
+    flex: 1;
+}
+
+.image-container {
+    flex: 1;
+    text-align: right;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.content {
+    margin: 0 auto;
+    width: 80%; /* Ancho del contenido ajustado según sea necesario */
+    margin-bottom: 20px; /* Espacio entre los bloques */
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-container {
+    flex: 1;
+    margin-left: 20px; /* Espacio entre el texto y la imagen */
+}
+
+.image-container {
+    flex: 1;
+    text-align: left; /* Alinea el contenido del contenedor a la izquierda */
+}
+
+
+
+
+
+
+
+
+.video-container {
+    flex: 1;
+    text-align: right;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    height: auto;
+}
 .images-container {
   display: flex;
   justify-content: center;
