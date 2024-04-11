@@ -1,0 +1,380 @@
+body {
+  padding: 25px;
+  background-color: #F9FBFB;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #003049;
+  padding: 10px 0;
+  text-align: center;
+  color: #F9FBFB;
+  z-index: 1000; /* Ensure it's above other content */
+
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head nav {
+  text-align: center;
+}
+
+.head nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.head nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.head nav ul li:last-child {
+  margin-right: 0;
+}
+
+.head nav ul li a {
+  text-decoration: none;
+  color: #F9FBFB
+}
+
+
+
+
+.trial-section {
+    margin-top: 120px; /* Margen superior de 50px */
+    margin-bottom: 40px; /* Margen inferior de 40px, igual que en .content */
+    margin-left: auto; /* Centra horizontalmente */
+    margin-right: auto; /* Centra horizontalmente */
+    width: 60%; /* Ancho del 60% */
+    max-width: 1200px; /* Máximo ancho de 1200px, igual que en .content */
+    display: flex;
+    justify-content: space-between;
+    background-color: #F9FBFB;
+    color: #003049;
+}
+
+.trial-info {
+    flex: 1;
+    margin-right: 20px;
+  margin-top:50px;
+}
+
+.trial-info h2,
+.trial-info h3 {
+    margin-bottom: 10px;
+}
+
+.trial-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.trial-info ul li {
+    margin-bottom: 10px;
+}
+
+.reasons {
+    flex: 1;
+}
+
+.form-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px; /* Aumenté el padding para hacer más espacio */
+    background-color: #003049;
+    color: #F9FBFB;
+    margin-top: 10px;
+    width: 100%; /* Ajusté el ancho del contenedor */
+    margin: 0 auto; /* Centré el contenedor horizontalmente */
+}
+
+.form-container p {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.content {
+  margin: 0 auto;
+  width: 60%;
+  max-width: 1200px;
+}
+
+.content {
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-container {
+  flex: 1;
+}
+
+.image-container {
+  flex: 1;
+  text-align: right;
+}
+
+.image-container img {
+  max-width: 80%;
+  height: auto;
+  margin-top: 100px;
+}
+
+.content {
+  margin-bottom: 40px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-container {
+  flex: 1;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.video-container {
+  text-align: right;
+  flex: 1;
+}
+
+.video-container iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+.images-container img {
+  max-width: 100px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.Acerca-de-nosotros,
+.mision,
+.vision,
+.valores {
+  margin-top: 20px;
+  color: black;
+  text-align: center;
+  clear: both;
+  margin-bottom: 20px;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #EEEEEE;
+  top: 0;
+  right: 0;
+  overflow-y: auto;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.chatbot {
+  flex: 1;
+  float: right;
+  width: 100%;
+  height: 100vh;
+  right: 0;
+  overflow-y: auto;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 3px 0;
+  text-align: center;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.footer-content {
+  margin-bottom: 20px;
+}
+
+.footer.hidden {
+  transform: translateY(100%);
+}
+
+.form-container input {
+    margin-bottom: 10px;
+    width: calc(100% - 20px); /* Ajusté el ancho de los inputs restando el padding */
+    padding: 10px;
+}
+
+.form-container button {
+    width: calc(100% - 20px); /* Ajusté el ancho del botón restando el padding */
+    padding: 10px;
+}
+
+
+
+
+.content {
+  margin: 0 auto;
+  width: 60%; /* Adjust the width of the content */
+  max-width: 1200px; /* Limit the maximum width */
+}
+
+
+/* Remove the margin-top from all .content elements */
+.content {
+  margin-bottom: 40px;
+}
+
+/* Add specific margin-top to the second .content */
+.content:nth-child(1) {
+  margin-top: 70px; /* Adjust as needed */
+}
+
+/* Add margin between text and GIF */
+.text-container {
+  margin-left: 50px;
+  margin-bottom: 20px; /* Add margin between text and GIF */
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-container {
+  flex: 1;
+}
+
+.image-container {
+  flex: 1;
+  text-align: right;
+}
+
+.image-container img {
+  max-width: 80%;
+  height: auto;
+     margin-top: 100px;
+}
+
+.content {
+  margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-container {
+  flex: 1;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.video-container {
+  text-align: right;
+  flex: 1;
+}
+
+.video-container iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+.images-container img {
+  max-width: 100px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.Acerca-de-nosotros,
+.mision,
+.vision,
+.valores {
+    margin-top: 20px;
+  color: black;
+  text-align: center;
+  clear: both;
+  margin-bottom: 20px;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #EEEEEE;
+  top: 0;
+  right: 0;
+  overflow-y: auto;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.chatbot {
+  flex: 1;
+  float: right;
+  width: 100%;
+  height: 100vh;
+  right: 0;
+  overflow-y: auto;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 3px 0;
+  text-align: center;
+  z-index: 1000; /* Ensure it's above other content */
+  transition: transform 0.3s ease; /* Add smooth transition effect */
+}
+
+.footer-content {
+  margin-bottom: 20px;
+}
+
+.footer.hidden {
+  transform: translateY(100%); /* Move footer out of view */
+}
