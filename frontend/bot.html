@@ -1,33 +1,45 @@
 <!DOCTYPE html>
-<html lang = "es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-  <title>Talk-to-your-data</title>
-  <link rel="stylesheet" href="./style.css" />
+  <meta charset="UTF-8">
+  <title>bot</title>
+      <link rel="stylesheet" href="./style.css" />
+
 </head>
-  <body>
-  <header>
-    <h1 class="title">Talk-to-your-data</h1>
-    <div class = "head">
+<body>
+
+<header>
+    <h1 class="header">Talk to your data</h1>
+    <div class="head">
     <nav>
         <ul>
-            <li><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
             <li><a href="./video.html">Video Demo</a></li>
         </ul>
     </nav>
     </div>
 </header>
-      <div class = "content">
-        <p>
-          Aca poner un feature de drag and drop para la data y que se crague automaticamente a bq
-        </p>
-      </div>
-        <div class="chat-container">
-        <div class="chat-box" id="chat-box"></div>
-        <div class="user-input-container">
-            <input type="text" id="user-input" placeholder="What do you want to know?">
+
+
+<div class="chat-container">
+    <div class="chat-box">
+        <div class="chat-box">
+    <div class="message-container">
+        <div class="message response">
+            Hola! Preguntame lo que quieras de tu data!
         </div>
+        <div class="message user-message">
+            Cual fue el producto mas vendido en el ultimo mes?
+        </div>
+        <!-- Agrega más mensajes y respuestas según sea necesario -->
     </div>
-  </body>
+</div>
+    <div class="message-input">
+        <input type="text" placeholder="Escribe tu mensaje...">
+        <button>Enviar</button>
+    </div>
+</div>
+
+
+</body>
 </html>

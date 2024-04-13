@@ -74,9 +74,6 @@ header {
     padding: 0;
 }
 
-.trial-info ul li {
-    margin-bottom: 10px;
-}
 
 .reasons {
     flex: 1;
@@ -124,6 +121,7 @@ header {
 .content {
   margin-bottom: 40px;
   margin-top: 50px;
+    padding: 30px;
 }
 
 .flex-container {
@@ -135,6 +133,8 @@ header {
 .text-container {
   flex: 1;
 }
+
+
 
 .image-container {
   flex: 1;
@@ -160,11 +160,6 @@ header {
   flex-direction: row;
 }
 
-.text-container {
-  flex: 1;
-}
-
-
 .video-container {
   text-align: right;
   flex: 1;
@@ -173,6 +168,7 @@ header {
 .video-container iframe {
   max-width: 100%;
   height: auto;
+  margin-left: 30px;
 }
 
 .images-container img {
@@ -185,7 +181,7 @@ header {
 .mision,
 .vision,
 .valores {
-  margin-top: 20px;
+  margin-top: 150px;
   color: black;
   text-align: center;
   clear: both;
@@ -209,9 +205,89 @@ footer {
   margin-bottom: 20px;
 }
 
-.footer.hidden {
-  transform: translateY(100%);
+
+
+.chat-container {
+    position: fixed;
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Centra exactamente en el medio */
+    width: 70%;
+    height: 80%; /* Reduje la altura para que quepa mejor en la pantalla */
+    background-color: #F9FBFB;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    display: flex; /* Usa flexbox para centrar el contenido verticalmente */
+    flex-direction: column; /* Alinear el contenido en columna */
 }
 
+.chat-box {
+    flex: 1; /* El chat-box se expandirá para ocupar el espacio restante */
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Alinear el contenido en columna */
+    justify-content: center;
+}
 
+.message-input {
+    width: 95%;
+    padding: 10px;
+    background-color: #F9FBFB;
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
 
+.message-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.message-input button {
+    padding: 8px;
+    border: none;
+    background-color: #003049;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message-input button:hover {
+    background-color: #003049;
+}
+
+/* Estilo para el contenedor de los mensajes */
+.message-container {
+    display: flex;
+    flex-direction: column; /* Alinear los mensajes en columna */
+    justify-content: flex-end; /* Alinear los mensajes al final del contenedor */
+}
+
+/* Estilo para el contenedor de cada mensaje */
+.message {
+    max-width: 70%; /* Ancho máximo para los mensajes */
+    margin-bottom: 5px; /* Espacio entre los mensajes */
+}
+
+/* Estilo para los mensajes del usuario */
+.user-message {
+    align-self: flex-end; /* Alinear el mensaje del usuario a la derecha */
+    background-color: #003049; /* Color de fondo para los mensajes del usuario */
+    color: white; /* Color de texto para los mensajes del usuario */
+    border-radius: 10px; /* Borde redondeado para los mensajes del usuario */
+    padding: 8px 12px; /* Espaciado interno para los mensajes del usuario */
+}
+
+/* Estilo para las respuestas */
+.response {
+    align-self: flex-start; /* Alinear las respuestas a la izquierda */
+    background-color: #003049; /* Color de fondo para las respuestas */
+    color: white; /* Color de texto para las respuestas */
+    border-radius: 10px; /* Borde redondeado para las respuestas */
+    padding: 8px 12px; /* Espaciado interno para las respuestas */
+}
