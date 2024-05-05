@@ -3,43 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>bot</title>
-      <link rel="stylesheet" href="./style.css" />
-
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
 
 <header>
     <h1 class="header">Talk to your data</h1>
     <div class="head">
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sales.html">Contact sales</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sales.html">Contact sales</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
 
-
 <div class="chat-container">
     <div class="chat-box">
-        <div class="chat-box">
-    <div class="message-container">
-        <div class="message response">
-            Hey! Ask me anything about your data!
-        </div>
-        <div class="message user-message">
-            What was our best-selling product?
-        </div>
-        <!-- Agrega más mensajes y respuestas según sea necesario -->
+        <div class="message-container"></div>
     </div>
-</div>
     <div class="message-input">
-        <input type="text" placeholder="Escribe tu mensaje...">
-        <button>Enviar</button>
+        <input id="user-input" type="text" placeholder="Write your message...">
+        <button id="send-button">Enviar</button>
     </div>
 </div>
 
+<script src="./chatbot.js"></script>
 
 </body>
 </html>
