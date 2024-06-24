@@ -1,17 +1,3 @@
-<!-- agregar un container tipo column al principo para tener un pedazo para chat storing
-
-______________________
-       HEADER         |
-______      _______   |
-|     |    |       |  |
-|sotre|    |  chat |  |
-|     |    |       |  |
-|     |    |       |  |
--------    ---------  |
-      FOOTER          |
-______________________|
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,15 +19,23 @@ ______________________|
     </div>
 </header>
 
-<div class="chat-container">
-    <div class="chat-box">
-        <div class="message-container"></div>
+<div class="main-container">
+    <div class="chat-history">
+      <h2>Chat History</h2>
+      <button id="new-chat-button">New Chat</button> <ul id="chat-list"></ul>
     </div>
-    <div class="message-input">
+
+    <div class="chat-container">
+      <div class="chat-box">
+        <div class="message-container"></div>
+      </div>
+      <div class="message-input">
         <input id="user-input" type="text" placeholder="Write your message...">
         <button id="send-button">Enviar</button>
+      </div>
     </div>
-</div>
+  </div>
+
 
 <script src="./chatbot.js"></script>
 

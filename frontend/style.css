@@ -1,10 +1,9 @@
 body {
-  padding: 25px;
+  padding: 0; /* Remove default padding */
   background-color: #F9FBFB;
   margin: 0;
   font-family: sans-serif;
 }
-
 
 header {
   position: fixed;
@@ -22,14 +21,14 @@ header {
 }
 
 .head nav {
-  display: flex; /* Cambiado a flex para alinear los elementos */
+  display: flex;
 }
 
 .head nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex; /* Cambiado a flex para alinear los elementos */
+  display: flex;
 }
 
 .head nav ul li {
@@ -46,8 +45,49 @@ header {
 }
 
 
+.main-container {
+  display: flex;
+  margin-top: 80px; /* Space below the header */
+  height: calc(100vh - 80px); /* Take up remaining viewport height */
+}
+
+.chat-history {
+  width: 30%; /* 30% width for chat history */
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  overflow-y: auto; /* Enable scrolling in the chat history */
+}
+
+.chat-history h2 {
+  margin-bottom: 10px;
+}
+
+.chat-history ul {
+  list-style: none;
+  padding: 0;
+}
+
+.chat-history li {
+  cursor: pointer;
+  padding: 5px;
+  border-bottom:1px solid #eee;
+}
+
+.chat-container {
+  width: 70%; /* 70% width for chat container */
+  /* ... other chat container styles remain the same ... */
+}
 
 
+.new-chat-button {
+  background-color: #003049;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Add some space above the button */
+}
 
 .trial-section {
     width: 60%;
@@ -198,27 +238,28 @@ footer {
 
 
 .chat-container {
-    position: fixed;
-    top: 50%; /* Centra verticalmente */
-    left: 50%; /* Centra horizontalmente */
-    transform: translate(-50%, -50%); /* Centra exactamente en el medio */
+  position: fixed;
+  top: 50%;  /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for centering */
     width: 70%;
     height: 80%; /* Reduje la altura para que quepa mejor en la pantalla */
     background-color: #F9FBFB;
-    border: none;
-    border-radius: 0;
-    overflow: hidden;
+    border: #003049;
+    border-radius: 16px;
     display: flex; /* Usa flexbox para centrar el contenido verticalmente */
     flex-direction: column; /* Alinear el contenido en columna */
+    max-height: 80vh;
 }
 
 .chat-box {
-    flex: 1; /* El chat-box se expandirá para ocupar el espacio restante */
-    overflow-y: auto;
-    padding: 10px;
-    display: flex;
-    flex-direction: column; /* Alinear el contenido en columna */
-    justify-content: center;
+  flex: 1; /* Allow chat-box to expand vertically */
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align messages to the bottom */
 }
 
 .message-input {
