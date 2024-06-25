@@ -408,10 +408,7 @@ body {
     background-color: #003049 !important;
     padding: 25px;
     border-bottom: 1px solid transparent;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+      border-radius: 0px;
   }
 
   .navbar {
